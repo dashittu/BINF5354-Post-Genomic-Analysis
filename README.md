@@ -49,18 +49,6 @@ AML-Variant-Analysis/
 
 ## Visualizations
 
-### SNV Count per Patient
-![SNV Count Plot](results/snv_count_per_patient.png)
-
-### Mutation Frequencies by SNV Type
-![Mutation Frequencies](results/mutation_frequencies.png)
-
-### Nonsynonymous SNVs per Gene
-![nsSNV Gene Count](results/nsSNV_per_gene.png)
-
-### FATHMM Pathogenicity Scores
-![FATHMM Scores](results/fathmm_scores.png)
-
 ### Top Scoring AML-Associated Genes
 ![Top Genes](results/top_genes_by_score.png)
 
@@ -78,10 +66,12 @@ AML-Variant-Analysis/
 
 3. **Run Scripts in Order**
    ```bash
-   python scripts/VCF2CSV_HW2.py       # Converts raw VCFs to CSV
-   python scripts/HW3_parsevcf.py      # Adds gene annotations and change type
-   python scripts/HW5_code.py          # Merges data and analyzes variant stats
-   python scripts/FATHHM.py            # Adds FATHMM scores (optional)
+   python VCF2CSV.py                  # Converts raw VCFs to CSV
+   python parsevcf.py                 # Adds gene annotations and change type
+   python FATHHM.py                   # Adds FATHMM scores
+   python SNPnexus.py                 # Adds SNPnexus scores
+   python tumor_vs_normal.py          # Merges data and analyzes variant stats
+   
    ```
 
 4. **Review Outputs**
