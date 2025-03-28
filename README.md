@@ -50,7 +50,7 @@ AML-Variant-Analysis/
 ## Visualizations
 
 ### Top Scoring AML-Associated Genes
-![Top Genes](results/top_genes_by_score.png)
+![Top Genes](top_genes_by_score.png)
 
 > *Note: Replace these placeholder images by uploading actual plot files into the `results/` folder.*
 
