@@ -54,8 +54,6 @@ AML-Variant-Analysis/
   <img src="./top_genes_by_score.png" alt="Top 10 Genes by Score" width="400"/>
 </p>
 
-> *Note: Replace these placeholder images by uploading actual plot files into the `results/` folder.*
-
 ---
 
 ## How to Run the Analysis
