@@ -1,3 +1,7 @@
+# parsevcf.py
+# Annotates variants from CSV files with gene names, region types, and mutation types
+# Original code by Dayo Shittu
+
 from math import fabs
 import os
 import pandas as pd
@@ -44,10 +48,10 @@ def annotation(unify,MAX_DIST = 5000,n=3):# unify is the csv file you generated 
         strand_gene=[]
         if chrom != prechrom:
             # You need to change this and the following directory
-            f = open("/Users/dayoshittu/Documents/Fall2022/BINF5354/Homework/Dayo_Shittu_Homework_3/ref_genome//"+chrom+'_hg38refFlat_2020.txt','r')
+            f = open("/Users/dayoshittu/Documents/Fall2022/BINF5354/ref_genome//"+chrom+'_hg38refFlat_2020.txt','r')
             flat = f.readlines()
             f.close()
-            seqfile=open("/Users/dayoshittu/Documents/Fall2022/BINF5354/Homework/Dayo_Shittu_Homework_3/ref_genome/genome_"+chrom+".fa",'r')
+            seqfile=open("/Users/dayoshittu/Documents/Fall2022/BINF5354/ref_genome/genome_"+chrom+".fa",'r')
             next(seqfile)
             sequence=seqfile.read().replace('\n','')
             seqfile.close()
@@ -278,15 +282,7 @@ def combine(geneinfo,csvfile):
     return
 
 
-if __name__=='__main__':    
-    '''
-    Delete this comment and fill in this block to put all csv files you are going to process under the 
-    same directory (no other file in that path). change your current working directory there and use 
-    os.listdir() to get names of all files uner that directory and call above two functions to process 
-    those files (for loop). Note for the first function annotation, you need a variable to take returned
-    dictionary, then use that as the first parameter for second function combine
-    '''
-    ######### MY CODE GOES HERE #########
+if __name__=='__main__':
     os.chdir("/Users/dayoshittu/Documents/Fall2022/BINF5354/Project/merged")
     csv_files = os.listdir()
     
