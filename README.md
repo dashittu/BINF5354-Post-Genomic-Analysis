@@ -85,5 +85,3 @@ We processed and annotated VCF files, conducted comparative mutation analysis, a
 
 ---
 
-## Contact
-For questions or collaboration, feel free to open an issue or fork the repo.
