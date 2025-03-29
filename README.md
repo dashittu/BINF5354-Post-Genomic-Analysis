@@ -67,6 +67,7 @@ We processed and annotated VCF files, conducted comparative mutation analysis, a
 ## Tools Used
 - Python (pandas, os, vcf)
 - FATHMM (Functional Analysis through Hidden Markov Models)
+- SNPnexus
 - Reference genome annotations from UCSC
 
 ---
