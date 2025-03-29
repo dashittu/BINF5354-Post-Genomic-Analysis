@@ -24,21 +24,6 @@ We processed and annotated VCF files, conducted comparative mutation analysis, a
 
 ---
 
-## Project Files & Structure
-```
-AML-Variant-Analysis/
-├── data/                   # Example VCFs or CSV outputs (not included here)
-├── scripts/                # Python scripts used in the analysis
-│   ├── VCF2CSV_HW2.py      # Converts VCF to CSV (tumor & normal separated)
-│   ├── HW3_parsevcf.py     # Annotates variants with gene info and mutation type
-│   ├── HW5_code.py         # Merges datasets, computes variant statistics
-│   └── FATHHM.py           # Adds FATHMM pathogenicity scores to variants
-├── results/                # Final CSV or Excel outputs (generated after running code)
-└── README.md               # This file
-```
-
----
-
 ## Key Findings
 - Out of 7238 SNVs in coding sequences, 4117 were nonsynonymous
 - Tumor samples showed a higher frequency of mutations than normal samples
